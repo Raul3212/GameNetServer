@@ -29,7 +29,7 @@ public class Main {
 		
 		jogo.addMeteoro(new Meteoro(rnd.nextInt(1300), -10));
 		
-		GameImage gameOver = new GameImage("resources/gameOver.jpg");
+		GameImage gameOver = new GameImage(Main.class.getResource("../resources/gameOver.jpg").toString());
 		gameOver.x = window.getWidth()/2 - gameOver.width/2;
 		gameOver.y = window.getHeight()/2 - gameOver.height/2;
 				
@@ -47,8 +47,6 @@ public class Main {
 			if(Jogo.player.getLife() <= 0){
 				break;
 			}
-			
-			
 			
 			window.clear(Color.BLACK);
 				

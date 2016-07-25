@@ -10,7 +10,7 @@ public class Player extends Sprite{
 	private double velocidade;
 	
 	public Player(double x, double y) {
-		super(Player.class.getResource("../resources/nave.png").toString());
+		super(Player.class.getResource("../resources/nave.png").toString().substring(6));
 		this.x = x;
 		this.y = y;
 		this.life = 100;

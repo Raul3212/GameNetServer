@@ -39,7 +39,7 @@ public class Jogo {
 			}
 			
 			if(Collision.collided(m, tiro)){
-				new Sound("resources/explosao.wav").play();
+				new Sound(Jogo.class.getResource("../resources/explosao.wav").toString().substring(6)).play();
 				m.resetarPosicao(window);
 				tiro.resetarPosicao();
 				player.setPoints(player.getPoints() + 10);
@@ -75,7 +75,7 @@ public class Jogo {
 	}
 	
 	public static void lancarTiro(){
-		new Sound("resources/tiro.wav").play();
+		new Sound(Jogo.class.getResource("../resources/tiro.wav").toString().substring(6)).play();
 		tiro.x = player.x+20;
 		tiro.y = player.y;
 	}
