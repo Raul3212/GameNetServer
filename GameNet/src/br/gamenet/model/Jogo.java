@@ -1,6 +1,5 @@
 package br.gamenet.model;
 
-import java.awt.RenderingHints.Key;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -16,17 +15,14 @@ public class Jogo {
 	public static Player player;
 	public static Tiro tiro;
 	private List<Meteoro> meteoros;
-	private boolean atirando = false;
 	private Window window;
 	private Keyboard keyboard;
-	private Mouse mouse;
 	private Time time;
 	private boolean moverAutomatico;
 	public Jogo(Player player, Window window, Keyboard keyboard, Mouse mouse, boolean moverAutomatico){
 		this.player = player;
 		this.window = window;
 		this.keyboard = keyboard;
-		this.mouse = mouse;
 		this.time = new Time(0, 0, 1, window.getWidth()/2 - 20, 20, true);
 		this.tiro = new Tiro(-50, -50);
 		this.meteoros = new ArrayList<>();

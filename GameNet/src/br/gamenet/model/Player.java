@@ -1,7 +1,5 @@
 package br.gamenet.model;
 
-import jplay.Keyboard;
-import jplay.Mouse;
 import jplay.Sprite;
 import jplay.Window;
 
@@ -12,11 +10,11 @@ public class Player extends Sprite{
 	private double velocidade;
 	
 	public Player(double x, double y) {
-		super("resources/nave.png");
+		super(Player.class.getResource("../resources/nave.png").toString());
 		this.x = x;
 		this.y = y;
 		this.life = 100;
-		this.points = 0;
+		this.points = 0;			
 		this.velocidade = 1.5;
 	}
 	

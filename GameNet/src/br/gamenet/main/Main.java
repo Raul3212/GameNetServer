@@ -1,22 +1,14 @@
 package br.gamenet.main;
 
 import java.awt.Color;
-import java.awt.RenderingHints.Key;
-import java.awt.event.KeyEvent;
 import java.io.IOException;
-import java.net.DatagramPacket;
-import java.net.DatagramSocket;
-import java.net.SocketException;
 import java.util.Random;
 
 import br.gamenet.model.Jogo;
 import br.gamenet.model.Meteoro;
 import br.gamenet.model.Player;
-import br.gamenet.model.Tiro;
 import br.gamenet.socket.ServidorUDP;
-import jplay.Collision;
 import jplay.GameImage;
-import jplay.GameObject;
 import jplay.Keyboard;
 import jplay.Mouse;
 import jplay.Window;

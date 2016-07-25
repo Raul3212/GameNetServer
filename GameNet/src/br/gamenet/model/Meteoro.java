@@ -11,7 +11,7 @@ public class Meteoro extends Sprite{
 	private double velocidade;
 	
 	public Meteoro(double x, double y) {
-		super("resources/meteoro1.png");
+		super(Meteoro.class.getResource("../resources/meteoro.png").toString());
 		this.rnd = new Random();
 		this.x = x;
 		this.y = y;

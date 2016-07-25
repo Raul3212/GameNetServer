@@ -12,7 +12,7 @@ public class ServidorUDP implements Runnable{
 
 	private Jogo jogo;
 	private Player player;
-	public static int PORTA_PADRAO = 7777;
+	public static int PORTA_PADRAO = 32127;
 	
 	public ServidorUDP(Jogo jogo) {
 		this.jogo = jogo;

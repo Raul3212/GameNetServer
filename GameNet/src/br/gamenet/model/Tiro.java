@@ -5,13 +5,13 @@ import jplay.Sprite;
 public class Tiro extends Sprite{
 
 	public Tiro(){
-		super("resources/tiro2.png");
+		super(Tiro.class.getResource("../resources/tiro.png").toString());
 		this.x = -50;
 		this.y = -50;
 	}
 	
 	public Tiro(double x, double y) {
-		super("resources/tiro2.png");
+		super(Tiro.class.getResource("../resources/tiro.png").toString());
 		this.x = x;
 		this.y = y;
 	}
